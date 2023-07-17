@@ -70,3 +70,11 @@ export EDITOR=code
 
 # Set ipdb as the default Python debugger
 export PYTHONBREAKPOINT=ipdb.set_trace
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/usr/local/share/google-cloud-sdk/path.zsh.inc' ]; then . '/usr/local/share/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/usr/local/share/google-cloud-sdk/completion.zsh.inc' ]; then . '/usr/local/share/google-cloud-sdk/completion.zsh.inc'; fi
+export GOOGLE_APPLICATION_CREDENTIALS=/Users/luca/CODE/service_account_google/wagon-bootcamp-393108-4884797f01ad.json
+eval "$(direnv hook zsh)"
